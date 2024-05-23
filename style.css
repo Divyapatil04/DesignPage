@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #ecf9ff;
+}
+body{
+    font-family: 'Quicksand', serif;
+}
+.container{
+    max-width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+.maincontent1{
+    margin-bottom: 200px;
+    width: 0px;
+    height: 0px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid darkorchid;
+    border-top: 60px solid darkorchid;
+    border-bottom: 60px solid darkorchid;
+    float: right;
+}
+.maincontent2{
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid darkorchid;
+    border-left: 60px solid darkorchid;
+    border-bottom: 60px solid darkorchid;
+    float: left;
+}
+.first-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-bottom: 3px dashed darkorchid;
+}
+
+
+.first-div h1{
+    padding:5px 20px;
+    border-radius: 8px;
+    color: aliceblue;
+    text-align: center;
+    background-color: darkorchid;
+    font-size: clamp(25px,4vw,40px);
+    text-transform: uppercase;
+}
+.second-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+.second-div h1{
+    font-size: clamp(25px,4vw,35px);
+    text-align: center;
+    margin: 20px;
+}
+.second-div h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    padding:20px 20px;
+    border-radius: 8px;
+    color: aliceblue;
+    text-align: center;
+    background-color: darkorchid;
+    font-size: clamp(16px,4vw,20px);
+}
+.first-div p{
+   font-size: clamp(12px,4vw,16px);
+   margin: 20px;
+}
+.row1,.row2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card{
+    height: 350px;
+    width: 250px;
+    margin: 20px;
+    padding-top: 40px;
+    background-color: #fefefe;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 10px 10px 0px rgba(0,0,0, 0.25);
+
+}
+.image{
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    background-image: url('Design1/image.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid #fff;
+    
+}
+.description{
+    padding-top: 40px;
+    
+}
+.description h4{
+    margin-top: 20px;
+}
+.description p{
+    margin-top: 20px;
+}
+@media only screen and (max-width:768px) {
+    .first-div h1{
+        height: 80px;
+    }
+}
+@media only screen and (max-width:425px) {
+    .first-div h1{
+        height: 80px;
+    }
+    .maincontent1{
+        display: none;
+    }
+    .maincontent2{
+        display: none;
+    }
+}
